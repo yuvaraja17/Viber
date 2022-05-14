@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/settingsbg"
+    tools:context=".allSettingsActivity">
+
+    <View
+        android:id="@+id/appbarview"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:background="@color/chatbg" />
+
+    <ImageView
+
+        android:id="@+id/settings_backarrow"
+        android:layout_width="30dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        app:srcCompat="@drawable/one_bakarrow" />
+
+    <TextView
+        android:id="@+id/setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="15dp"
+        android:text="Settings"
+        android:textColor="@color/black"
+        android:textSize="28dp" />
+
+    <TextView
+
+        android:id="@+id/settingsactivity_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/appbarview"
+        android:layout_marginTop="40dp"
+        android:drawableLeft="@drawable/one_usericon"
+        android:paddingStart="20dp"
+        android:paddingLeft="10dp"
+        android:text="  Profile"
+        android:textColor="@color/black"
+
+        android:textSize="25dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="64dp" />
+
+    <View
+        android:id="@+id/viewprofile"
+        android:layout_width="wrap_content"
+        android:layout_height="3dp"
+        android:layout_below="@+id/settingsactivity_profile"
+        android:layout_marginTop="0dp"
+        android:background="@color/chatbg"/>
+
+    <TextView
+
+        android:id="@+id/settingsactivity_passwordreset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/viewprofile"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@drawable/one_password"
+        android:paddingStart="20dp"
+        android:paddingLeft="10dp"
+        android:text="  Reset Password"
+
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="64dp" />
+
+    <View
+        android:id="@+id/viewpassword"
+        android:layout_width="wrap_content"
+        android:layout_height="3dp"
+        android:layout_below="@+id/settingsactivity_passwordreset"
+        android:layout_marginTop="0dp"
+        android:background="@color/chatbg"/>
+
+    <TextView
+
+        android:id="@+id/settingsactivity_about"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/viewpassword"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@drawable/one_usericon"
+        android:paddingStart="20dp"
+        android:paddingLeft="10dp"
+        android:text="  About"
+
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="64dp" />
+
+    <View
+        android:id="@+id/viewabout"
+        android:layout_width="wrap_content"
+        android:layout_height="3dp"
+        android:layout_below="@+id/settingsactivity_about"
+        android:layout_marginTop="0dp"
+        android:background="@color/chatbg"/>
+
+    <TextView
+
+        android:id="@+id/settingsactivity_signout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/viewabout"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@drawable/one_settings_logout"
+        android:paddingStart="20dp"
+        android:paddingLeft="10dp"
+        android:text="  Log Out"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="64dp" />
+<View
+        android:id="@+id/viewdelete"
+        android:layout_width="wrap_content"
+        android:layout_height="3dp"
+        android:layout_below="@+id/settingsactivity_about"
+        android:layout_marginTop="0dp"
+        android:background="@color/chatbg"/>
+
+    <TextView
+
+        android:id="@+id/settingsactivity_delete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/viewabout"
+        android:layout_marginTop="50dp"
+        android:drawableLeft="@drawable/one_settings_logout"
+        android:paddingStart="20dp"
+        android:paddingLeft="10dp"
+        android:text="  Delete Account"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="64dp" />
+
+    <View
+        android:id="@+id/viewlogout"
+        android:layout_width="wrap_content"
+        android:layout_height="3dp"
+        android:layout_below="@+id/settingsactivity_signout"
+        android:layout_marginTop="0dp"
+        android:background="@color/chatbg" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/viewlogout"
+        android:gravity="center"
+        android:layout_marginTop="50dp"
+        android:text="Developed by    @Yuvi"
+        android:textSize="14dp"
+        android:textColor="@color/black" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:foregroundGravity="center_vertical|clip_horizontal|center"
+        android:padding="40dp"
+        android:visibility="gone" />
+
+</RelativeLayout>

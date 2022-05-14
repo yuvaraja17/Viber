@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/profilebg"
+    tools:context=".SettingsActivity">
+
+    <ImageView
+
+        android:id="@+id/backarrow"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        app:srcCompat="@drawable/left_arrow" />
+
+    <LinearLayout
+        android:outlineSpotShadowColor="@color/white"
+        android:padding="20dp"
+        android:background="@drawable/profile_transparent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/backarrow"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="116dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            app:civ_border_width="3dp"
+            app:civ_border_color="@color/white"
+            android:id="@+id/image_profile"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/userpic" />
+
+        <ImageView
+            android:id="@+id/plus"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="-35dp"
+            android:layout_marginRight="-52dp"
+            app:srcCompat="@drawable/photoadd" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:padding="2dp"
+            android:background="@drawable/profile_edit_text_border"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="User Name:"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etUserName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Enter your name"
+                android:inputType="textPersonName"
+                android:textColor="@color/black"
+                android:textColorHint="#9C000000" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:padding="2dp"
+            android:background="@drawable/profile_edit_text_border"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="About:"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etAbout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="About"
+                android:inputType="textPersonName"
+                android:textColor="@color/black"
+                android:textColorHint="#9C000000" />
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/saveButton"
+            android:layout_width="110dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="15dp"
+            android:text="save"
+            android:layout_gravity="center"
+            android:textColor="#283593"
+            android:visibility="visible"
+            app:backgroundTint="#7900FBDE"
+            app:iconGravity="textEnd"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/passwordsi"
+            app:strokeColor="#283593"
+            app:strokeWidth="2dp"
+            tools:ignore="MissingConstraints" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="#70FFFFFF">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="65dp"
+        android:layout_height="75dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:padding="5dp"
+        android:src="@drawable/userpic"
+        app:civ_border_color="#FFFFFF"
+        app:civ_border_width="2dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/UserName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/autour_one"
+            android:paddingLeft="15dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="0dp"
+            android:text="User name"
+            android:textColor="@color/colorMiddleAccent"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/block"
+            android:layout_width="44dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_block_24"
+            android:layout_marginLeft="100dp"/>
+
+        <TextView
+            android:id="@+id/LastMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="30dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:text="Last Message"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/Time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:paddingLeft="5dp"
+            android:paddingTop="2dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="2dp"
+android:textColor="#C3C3C3"
+            android:text="Time"
+            android:textSize="12dp" />
+
+
+    </LinearLayout>
+
+</LinearLayout>
